@@ -1,0 +1,549 @@
+html {
+    font-size: 65px;
+}
+
+@media screen and (min-width:350px) and (max-width:374.9px) {
+    html {
+        font-size: 70px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:399.9px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:424.9px) {
+    html {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:449.9px) {
+    html {
+        font-size: 85px;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:474.9px) {
+    html {
+        font-size: 90px;
+    }
+}
+
+@media screen and (min-width:475px) and (max-width:499.9px) {
+    html {
+        font-size: 95px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:524.9px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+@media screen and (min-width:525px) and (max-width:549.9px) {
+    html {
+        font-size: 105px;
+    }
+}
+
+@media screen and (min-width:550px) and (max-width:574.9px) {
+    html {
+        font-size: 110px;
+    }
+}
+
+@media screen and (min-width:575px) and (max-width:599.9px) {
+    html {
+        font-size: 115px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    html {
+        font-size: 120px;
+    }
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding-bottom: 44px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?ug24pf');
+    src: url('../fonts/icomoon.eot?ug24pf#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?ug24pf') format('truetype'),
+        url('../fonts/icomoon.woff?ug24pf') format('woff'),
+        url('../fonts/icomoon.svg?ug24pf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 头部 */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    min-width: auto;
+    height: 44px;
+    background-color: #c81623;
+    overflow: hidden;
+}
+
+.header .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 44px;
+    text-align: center;
+}
+
+.header .menu::after {
+    content: "\e9bd";
+    color: #fff;
+    font-size: 18px;
+    font-family: 'icomoon';
+    line-height: 44px;
+}
+
+.header .search {
+    height: 30px;
+    border-radius: 15px;
+    margin: 7px 40px 0 40px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.header .search .logo {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background: url(../image/logo.png) no-repeat 7.5px 7.5px;
+    background-size: 15px 15px;
+}
+
+.header .search .logo::after {
+    content: '';
+    float: right;
+    width: 0;
+    height: 14px;
+    margin-top: 8px;
+    border-right: 1px solid #666;
+}
+
+.header .search-right .icon-container {
+    position: relative;
+    float: left;
+}
+
+.header .search-right .icon-container::after {
+    content: '\e986';
+    font-family: "icomoon";
+    color: #666;
+    line-height: 30px;
+}
+
+.header .search-right .input-container {
+    height: 30px;
+    margin-left: 58px;
+}
+
+.header .search-right .input-container input {
+    width: 100%;
+    height: 30px;
+    border: 0;
+}
+
+.header .login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 44px;
+    color: #fff;
+    line-height: 44px;
+    text-align: center;
+}
+
+.slide-container {
+    position: relative;
+    width: 100%;
+    height: 1.85rem;
+    margin-top: 44px;
+}
+
+.slide-container .background {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 150%;
+    height: 70%;
+    margin-left: -25%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background: #c81623;
+}
+
+.slide-container .slide {
+    position: relative;
+    height: 1.85rem;
+    margin: 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide-container .slide .slideUl {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    transform: translateX(-100%);
+}
+
+.slide-container .slide .slideUl li {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-container .slide .slideUl li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-container .slide .slideUl li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-container .slide .dot-container {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    bottom: 20px;
+}
+
+.slide-container .slide .dot-container li {
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.slide-container .slide .dot-container .current {
+    background-color: #c81623;
+}
+
+/* 主体导航 */
+
+.main .main-nav {
+    position: relative;
+    height: 2.16rem;
+}
+
+.main-nav .navUl {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    padding-top: 0.15rem;
+}
+
+.main-nav .navUl li {
+    float: left;
+    width: 10%;
+    height: 1.05rem;
+}
+
+.main-nav .navUl li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #666;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.main-nav .navUl li a img {
+    width: 0.53rem;
+    height: 0.53rem;
+}
+
+.main-nav .dot-container {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.main-nav .dot-container li {
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    border-radius: 3px;
+    background-color: rgb(165, 165, 165);
+}
+
+.main-nav .dot-container .current {
+    background-color: #c81623;
+}
+
+
+/* 秒杀 */
+.main .discounts {
+    height: 1.6rem;
+    margin: 0 3%;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 0.15rem;
+}
+
+.main .discounts .discounts-top {
+    height: 0.45rem;
+    margin: 0 5px;
+    color: #c81623;
+    line-height: 0.45rem;
+}
+
+.main .discounts .discounts-top h3 {
+    float: left;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #333;
+    font-size: 0.18rem;
+}
+
+.main .discounts .discounts-top .count-down {
+    float: left;
+}
+
+.main .discounts .discounts-top .count-down .hour,
+.main .discounts .discounts-top .count-down .minute,
+.main .discounts .discounts-top .count-down .second {
+    float: left;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin: 0.13rem 0;
+    border-radius: 5px;
+    background-color: #c81623;
+    color: #fff;
+    text-align: center;
+    line-height: 0.2rem;
+}
+
+.main .discounts .discounts-top .count-down .colon {
+    float: left;
+    font-size: 0.25rem;
+}
+
+.main .discounts .discounts-top .more {
+    float: right;
+}
+
+.main .discounts .discounts-top .more::after {
+    content: '\e900';
+    font-family: 'icomoon';
+}
+
+.main .discounts .commodity {
+    width: 100%;
+    height: 1.05rem;
+    margin-top: 0.1rem;
+    overflow-x: scroll;
+}
+
+.main .discounts .commodity::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.main .discounts .commodity ul {
+    height: 1.05rem;
+}
+
+.main .discounts .commodity li {
+    float: left;
+    width: 0.75rem;
+    height: 100%;
+    margin-right: 0.1rem;
+}
+
+.main .discounts .commodity li a {
+    display: block;
+    height: 100%;
+    color: #c81623;
+    text-align: center;
+}
+
+.main .discounts .commodity li a img {
+    display: block;
+    width: 100%;
+    height: 0.75rem;
+}
+
+.main .discounts .commodity li a h4 {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.15rem;
+    font-weight: 400;
+}
+
+.main .goods {
+    margin: 1.5%;
+}
+
+.main .goods::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .goods .fl {
+    float: left;
+    width: 50%;
+}
+
+.main .goods .fr {
+    float: right;
+    width: 50%;
+}
+
+.main .goods li {
+    margin: 0 3.09% 6.18%;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.main .goods .fl li a {
+    display: block;
+}
+
+.main .goods li a img {
+    display: block;
+    width: 100%;
+    height: 2.2rem;
+}
+
+.main .goods li a .good-discribe {
+    height: 1.33rem;
+    padding: 10px;
+}
+
+.main .goods li a .good-discribe .good-name {
+    height: 0.65rem;
+    color: #333;
+    line-height: 0.33rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.main .goods li a .good-discribe .price-and-moneyOff {
+    height: 0.4rem;
+    color: #c81623;
+    line-height: 0.4rem;
+}
+
+.main .goods li a .good-discribe .price {
+    float: left;
+    height: 100%;
+}
+
+.main .goods li a .good-discribe .price .big-size {
+    font-size: 0.26rem;
+}
+
+.main .goods li a .good-discribe .moneyOff {
+    float: left;
+    height: 0.2rem;
+    margin-top: 0.1rem;
+    padding: 0 2px;
+    border: 1px solid #c81623;
+    border-radius: 2px;
+    font-size: 0.16rem;
+    line-height: 0.2rem;
+}
+
+.main .goods li a .good-discribe .comment-and-like {
+    height: 0.2rem;
+    line-height: 0.2rem;
+}
+
+.main .goods li a .good-discribe .comment {
+    float: left;
+    color: #666;
+}
+
+.main .goods li a .good-discribe .like {
+    float: right;
+    padding: 0 2px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    color: #333;
+}
+
+/* 底部导航 */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 44px;
+    background-color: #fff;
+}
+
+.bottom-nav ul {
+    height: 100%;
+}
+
+.bottom-nav ul li {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.bottom-nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.bottom-nav ul li a img {
+    width: 100%;
+    height: 100%;
+}
